@@ -1,0 +1,55 @@
+body, html{
+    margin:0;
+    padding: 0;
+}
+h1{
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#navlinks{
+    position: sticky;
+}
+.menu{
+    background-color: gray;
+    margin: 0; 
+}
+.menu li{
+    display: inline-block;
+    padding: 8px; 
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.menu li:hover{
+    background-color: black;
+}
+.submenu{
+    background-color: lightgrey;
+    display: none;
+    position: absolute;
+}
+
+.menu li:nth-child(2):hover .submenu,
+.menu li:nth-child(3):hover .submenu{
+    display: block;
+}
+.submenu li a{
+    color: rgb(255, 0, 191);
+
+}
+
+.submenu li{
+    display: block;
+}
+
+.submenu li:hover{
+    background-color: gray;
+}

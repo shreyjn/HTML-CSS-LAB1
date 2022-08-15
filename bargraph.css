@@ -1,0 +1,69 @@
+#bar-graph{
+    position:absolute;
+    top :5%;
+    left: 40%;
+    background-color: lightskyblue
+}
+
+#bar-graph article{
+    display: inline-block;
+}
+
+p{
+    padding-left: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.graph{
+    background-color: white;
+    height: 400px;
+    width:40px;
+    margin:20px;
+}
+
+#bar1{
+    width: 100%;
+    animation-name: barplot1;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    height: 70%;
+    background-color:rgba(255, 60, 0, 0.904);
+}
+
+#bar2{
+    width: 100%;
+    animation-name: barplot2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    height: 60%;
+    background-color:rgba(255, 60, 0, 0.904);
+   
+}
+
+#bar3{
+    width: 100%;
+    animation-name: barplot3;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    height: 20%;
+    background-color:rgba(255, 60, 0, 0.904);   
+    
+}
+
+@keyframes barplot1 {
+    0% {height: 100%; background-color: rgba(255, 60, 0, 0.904);}
+    100% {height: 70%; background-color: rgba(255, 60, 0, 0.904);}
+}
+
+@keyframes barplot2 {
+    0% {height: 100%; background-color: rgba(255, 60, 0, 0.904);}
+    100% {height: 60%; background-color: rgba(255, 60, 0, 0.904);}
+}
+
+@keyframes barplot3 {
+    0% {height: 100%; background-color: rgba(255, 60, 0, 0.904);}
+    100% {height: 20%; background-color: rgba(255, 60, 0, 0.904);}
+}
